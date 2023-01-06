@@ -6,4 +6,11 @@ def find_max_key(data: dict):
     Returns:
         int: The maximum key in the dictionary.
     """
-    return 
+    keys=data.keys()
+    list1=list(keys)
+    max=0
+    for i in list1:
+        if max<i:
+            max=i
+    return max
+print(find_max_key({1:'werds',9.1:'asdfgs',30:'dfdsdffdsdfvsd'}))
