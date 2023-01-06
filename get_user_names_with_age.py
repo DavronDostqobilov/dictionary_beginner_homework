@@ -10,5 +10,5 @@ def get_user_names_with_age(data:list, age:int) -> list:
     """
     for i in data:
         if i['age']==age:
-            return i['name'] 
+            return list(i['name']) 
 print(get_user_names_with_age([{'name': 'John','age': 27},{'name': 'Mary', 'age': 42}],42))
